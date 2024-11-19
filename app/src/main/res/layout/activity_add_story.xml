@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1">
+
+
+    <Button
+        android:id="@+id/button_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/button_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Photo"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_placeholder"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:id="@+id/ed_add_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Story Description"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="16dp"
+        android:minHeight="100dp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Story" />
+</LinearLayout>
